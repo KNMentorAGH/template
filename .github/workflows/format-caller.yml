@@ -1,0 +1,11 @@
+name: Quality Gate (Auto Format)
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+
+jobs:
+  call-shared-format:
+    uses: KNMentorAGH/.github/.github/workflows/reusable-format.yml@main
+    secrets:
+      token: ${{ secrets.GITHUB_TOKEN }}
