@@ -7,4 +7,5 @@ on:
 jobs:
   call-test:
     uses: KNMentorAGH/.github/.github/workflows/reusable-test.yml@main
-    secrets: inherit
+    secrets:
+      token: ${{ secrets.GITHUB_TOKEN }}
