@@ -1,9 +1,0 @@
-name: Build Check
-
-on:
-  pull_request:
-    types: [opened, synchronize, reopened]
-
-jobs:
-  call-build:
-    uses: KNMentorAGH/.github/.github/workflows/reusable-build.yml@main
